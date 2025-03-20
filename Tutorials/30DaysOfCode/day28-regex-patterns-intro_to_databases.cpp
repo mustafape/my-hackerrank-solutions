@@ -61,7 +61,7 @@ class emailsDB
 bool sortByNameASC(const aRecord &lhs, const aRecord &rhs) { return lhs.m_firstName < rhs.m_firstName; }
 bool sortByNameDESC(const aRecord &lhs, const aRecord &rhs) { return lhs.m_firstName > rhs.m_firstName; }
 
-// Sort Container by age function
+// Sort Container by eMail function
 bool sortByeMailASC(const aRecord &lhs, const aRecord &rhs) { return lhs.m_emailId < rhs.m_emailId; }
 bool sortByeMailDESC(const aRecord &lhs, const aRecord &rhs) { return lhs.m_emailId > rhs.m_emailId; }
 
