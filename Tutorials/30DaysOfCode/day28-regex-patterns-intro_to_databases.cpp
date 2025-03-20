@@ -76,14 +76,7 @@ emailsDB::sortByCriteria(SortOrder order, string textToContain)
 		}
 	}
 	
-	if(order == so_ASC)
-	{
-		sort(m_record_collection.begin(), m_record_collection.end(), sortByNameASC);
-	}
-	else if(order == so_DESC)
-	{
-		sort(m_record_collection.begin(), m_record_collection.end(), sortByNameDESC);
-	}
+	sort(m_record_collection.begin(), m_record_collection.end(), (order == so_ASC) ? sortByNameASC : sortByNameDESC);
 }
 
 void
