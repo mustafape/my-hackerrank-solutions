@@ -135,7 +135,7 @@ emailsDB::sortByCriteria(SortCriteria criteria, SortOrder order)
 	else
 		result = -1;
 	
-		return result;
+	return result;
 }
 
 
