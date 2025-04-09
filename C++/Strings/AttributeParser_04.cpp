@@ -85,8 +85,6 @@ public:
             m_TagList.push_back(tagName); // Add the tag to the list
         }
 
-        //tokens.erase(tokens.begin()); // Remove the processed token
-
         while(tokenIndex < tokens.size()) {  // Process the remaining tokens
             attrName  = tokens[tokenIndex++]; // Assuming the next token is the attribute name
             equalSign = tokens[tokenIndex++]; // Assuming the next token is the equal sign
