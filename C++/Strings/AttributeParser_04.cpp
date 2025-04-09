@@ -93,8 +93,6 @@ public:
             attrValue = tokens[tokenIndex++]; // Assuming the next token is the attribute value
             attrValue = attrValue.substr(1, attrValue.size() - 2); // Remove " and " from the attribute value
 
-            //tokens.erase(tokens.begin(), tokens.begin() + 3);  // Remove the processed tokens
-
             m_AttributeValues[getTagName() + "~" + attrName] = attrValue;   // Store the attribute value in the map
         }
     }
