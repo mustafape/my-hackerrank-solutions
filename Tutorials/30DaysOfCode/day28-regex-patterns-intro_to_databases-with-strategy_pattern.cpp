@@ -169,7 +169,7 @@ istream& getline(istream &input, emailsDB& obj)
 	return input;
 }
 
-// Concrete Sort Strategy for sorting by name in ascending order
+// Concrete Sort Strategy for sorting by name in requested order
 class SortByName : public SortStrategy {
 public:
     void execute(vector<aRecord>& records, SortOrder order) override {
@@ -179,7 +179,7 @@ public:
     }
 };
 
-// Concrete Sort Strategy for sorting by email in ascending order
+// Concrete Sort Strategy for sorting by email in requested order
 class SortByEmail : public SortStrategy {
 public:
 	void execute(vector<aRecord>& records, SortOrder order) override {
