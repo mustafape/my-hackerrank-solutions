@@ -158,15 +158,6 @@ public:
     }
 
     //=======================================================================
-    // Main function to run the solution
-    //=======================================================================
-    void runSolution() {
-        getEntriesFromConsole();
-        processHRMLList();
-        processQueries();
-    }
-
-    //=======================================================================
     // Helper functions to print the vectors and maps for debugging purposes
     //=======================================================================
     void printTagList(void) {
@@ -193,6 +184,15 @@ public:
     //=======================================================================
     // End of helper functions
     //=======================================================================
+
+    //=======================================================================
+    // Main function to run the solution
+    //=======================================================================
+    void runSolution() {
+        getEntriesFromConsole();
+        processHRMLList();
+        processQueries();
+    }
 };
 
 int main() {
@@ -202,3 +202,4 @@ int main() {
 
     return 0;
 }
+
